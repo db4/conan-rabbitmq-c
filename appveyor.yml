@@ -6,13 +6,12 @@ environment:
     PYTHON_ARCH: "32"
 
     CONAN_REFERENCE: "rabbitmq-c/0.6.0"
-    CONAN_USERNAME: "sobotklp"
-    CONAN_LOGIN_USERNAME: "sobotklp"
+    CONAN_USERNAME: "dbely"
+    CONAN_LOGIN_USERNAME: "dbely"
     CONAN_CHANNEL: "testing"
     VS150COMNTOOLS: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\Common7\\Tools\\"
-    CONAN_UPLOAD: "https://api.bintray.com/conan/sobotklp/conan"
+    CONAN_UPLOAD: "https://api.bintray.com/conan/dbely/conan"
     CONAN_STABLE_BRANCH_PATTERN: "release/*"
-    CONAN_UPLOAD_ONLY_WHEN_STABLE: 1 # Will only upload when the branch matches "release/*"
 
     matrix:
 
