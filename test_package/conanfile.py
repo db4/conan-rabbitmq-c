@@ -4,7 +4,7 @@ import os
 class RabbitMQTestConan(ConanFile):
     version = "0.1"
     settings = "os", "compiler", "build_type", "arch"
-    generators = "cmake"
+    generators = "cmake", "cmake_find_package"
     requires = "gtest/1.8.0@bincrafters/stable"
 
     def build(self):

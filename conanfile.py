@@ -8,7 +8,6 @@ class RabbitMQConan(ConanFile):
     description = "This is a C-language AMQP client library for use with v2.0+ of the RabbitMQ broker."
     settings = "os", "compiler", "build_type", "arch"
     options = {"shared": [True, False], "fPIC": [True, False]}
-    exports = "FindRabbitmqc.cmake"
     default_options = "shared=True", "fPIC=True"
     requires = ("OpenSSL/1.0.2n@conan/stable")
     generators = "cmake"
@@ -81,9 +80,6 @@ endif()""", "")
         self.copy("*.so*", dst="lib", src="install", keep_path=False, symlinks=True)
         self.copy("*.dylib", dst="lib", src="install", keep_path=False, symlinks=True)
         self.copy("*.a", dst="lib", src="install", keep_path=False)
-
-        # Copy cmake find_package script into project
-        self.copy("FindRabbitmqc.cmake", ".", ".")
 
     def package_info(self):
         if self.settings.os == "Windows":
