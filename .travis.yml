@@ -1,6 +1,6 @@
 env:
    global:
-     - CONAN_REFERENCE: "rabbitmq-c/0.6.0"
+     - CONAN_REFERENCE: "rabbitmq-c/0.10.0"
      - CONAN_USERNAME: "dbely"
      - CONAN_LOGIN_USERNAME: "dbely"
      - CONAN_CHANNEL: "testing"

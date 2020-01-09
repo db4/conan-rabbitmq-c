@@ -14,20 +14,20 @@ Download conan client from [Conan.io](https://conan.io) and run:
 
 ## Upload packages to server
 
-    $ conan upload rabbitmq-c/0.6.0@dbely/stable --all
+    $ conan upload rabbitmq-c/0.10.0@dbely/stable --all
 
 ## Reuse the packages
 
 ### Basic setup
 
-    $ conan install rabbitmq-c/0.6.0@dbely/stable
+    $ conan install rabbitmq-c/0.10.0@dbely/stable
 
 ### Project setup
 
 If you handle multiple dependencies in your project, it would be better to add a *conanfile.txt*
 
     [requires]
-    rabbitmq-c/0.6.0@dbely/stable
+    rabbitmq-c/0.10.0@dbely/stable
 
     [generators]
     txt
