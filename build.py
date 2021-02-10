@@ -1,4 +1,4 @@
-from conan.packager import ConanMultiPackager
+from cpt.packager import ConanMultiPackager
 
 if __name__ == "__main__":
     builder = ConanMultiPackager(build_policy="missing")
